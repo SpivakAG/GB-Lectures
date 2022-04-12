@@ -22,8 +22,30 @@ void PrintArray(int[] col)
     }
 }
 
+//определяет индекс искомого числа из массива
+int IndexOf(int[] collection, int find)
+{
+    int count = collection.Length;
+    int index = 0;
+    int position = -1; //если будет -1, то значит такого элемента нет в массиве
+    while (index < count)
+    {
+        if(collection[index] == find)
+        {
+            position = index;
+            break;
+        }
+        index++;
+    }
+    return position;
+}
+
 //Определяем массив из 10 элементов
 int[] array = new int[10];
 
 FillArray(array);
 PrintArray(array);
+Console.WriteLine();
+
+int pos = IndexOf(array, 4); //4 это число которое ищем
+Console.WriteLine(pos);
