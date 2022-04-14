@@ -2,11 +2,15 @@
 int first = number / 10;
 int second = number % 10;
 
-if (first>second)
+int max =MaxNumber(first, second);
+
+Console.WriteLine(max);
+int MaxNumber (int number1, int number2)
 {
-    Console.WriteLine(first);
-}
-else
-{
-    Console.Writeline(second);
+    int max = number1;
+    if (number2> number1)
+    {
+        max = number2;
+    }
+    return max;
 }
