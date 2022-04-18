@@ -8,7 +8,8 @@ double bx = Convert.ToDouble(Console.ReadLine());
 Console.Write("Введите координату Y точки B:");
 double by = Convert.ToDouble(Console.ReadLine());
 
-double pow = Math.Pow(bx-ax, 2)+Math.Pow(by-ay, 2);
-double sqrt = Math.Sqrt(pow);
+double pow1 = Math.Pow(bx-ax, 2);
+double pow2 = Math.Pow(by-ay, 2);
+double sqrt = Math.Sqrt(pow1+pow2);
 
 Console.Write(sqrt);
