@@ -2,13 +2,11 @@
 Console.Write("Введите номер четверти:");
 int quater = Convert.ToInt32(Console.ReadLine());
 
-int x = 0;
-int y = 0;
+int x = int.MaxValue;
+int y = int.MaxValue;
 
 if (quater == 1) 
 {
-    x = int.MaxValue;
-    y = int.MaxValue;
     Console.WriteLine($"X от 0 до {x}");
     Console.WriteLine($"Y от 0 до {y}");
 }
