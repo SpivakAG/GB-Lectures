@@ -5,6 +5,10 @@ int quater = Convert.ToInt32(Console.ReadLine());
 int x = int.MaxValue;
 int y = int.MaxValue;
 
+if(quater<1 || quater>4) Console.WriteLine("Введеное число некорректно");
+
+else
+{
 if (quater == 1) 
 {
     Console.WriteLine($"X от 0 до {x}");
@@ -30,4 +34,5 @@ if (quater == 4)
     y = int.MaxValue;
     Console.WriteLine($"X от {x} до 0");
     Console.WriteLine($"Y от 0 до {y}");
+}
 }
