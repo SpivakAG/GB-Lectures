@@ -23,7 +23,7 @@ void Method21(string msg, int count)
     while (i < count)
     {
         Console.WriteLine(msg);
-        i ++;
+        i++;
     }
 }
 //Вызов
@@ -36,17 +36,17 @@ int Method3()
     return DateTime.Now.Year;
 }
 //вызов
-int year =  Method3();
+int year = Method3();
 Console.WriteLine(year);
 
 
-//Вид3
-string Method4(int count, string text )
+//Вид4
+string Method4(int count, string text)
 {
-    int i= 0;
-    string result=String.Empty;
+    int i = 0;
+    string result = String.Empty;
 
-    while(i<count)
+    while (i < count)
     {
         result = result + text;
         i++;
@@ -56,3 +56,29 @@ string Method4(int count, string text )
 //вызов
 string res = Method4(10, "asdf");
 Console.WriteLine(res);
+
+
+
+//Цикл for
+string Method5(int count, string text)
+{
+    string result = String.Empty;
+    for (int i = 0; i < count; i++)
+    {
+        result = result + text;
+    }
+    return result;
+}
+//вызов
+string resul = Method5(10, "asdf");
+Console.WriteLine(resul);
+
+//задача вывода таблицы умножения на экран
+for (int i = 2; i <= 10; i++)
+{
+    for (int j = 2; j <= 10; j++)
+    {
+        Console.WriteLine($"{i} * {j} = {i*j}");
+    }
+    Console.WriteLine();
+}
